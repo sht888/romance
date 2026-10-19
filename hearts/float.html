@@ -54,10 +54,17 @@
             object-fit: cover; /* 保持宽高比并填充元素的整个内容框 */
             opacity: 0.65;
         }
-        .hidden {  
-            display: none;  
-        }  
-    </style>  
+        .hidden {
+            display: none;
+        }
+        /* 手机竖屏：完整显示整段视频，避免裁掉爱心 */
+        @media (max-aspect-ratio: 1/1) {
+            #video1 {
+                object-fit: contain;
+                opacity: 0.9;
+            }
+        }
+    </style>
 </head>
 <body>
     <p></p>
