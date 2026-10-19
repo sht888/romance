@@ -90,25 +90,26 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            margin-top: -75px;
-            margin-left: -100px;
-
+            transform: translate(-50%, -50%);
+            z-index: 2;
         }
 
         h4 {
-            font-family: "STKaiti";
-            font-size: 40px;
+            margin: 0;
+            font-family: "STKaiti", "KaiTi", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: clamp(22px, 5.5vw, 40px);
             color: #f584b7;
             position: relative;
             top: -70px;
-            left: -65px;
+            white-space: nowrap;
+            text-shadow: 0 0 12px rgba(245, 132, 183, 0.55);
         }
     </style>
 </head>
 
 <body>
     <div id="child">
-        <h4>💗我永远为你着迷</h4>
+        <h4>💗简妮baby，永远开心</h4>
     </div>
     <!--这里写名字❤！！！-->
     <canvas id="pinkboard"></canvas>

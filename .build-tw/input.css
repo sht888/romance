@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+  .float-animation { animation: float 3s ease-in-out infinite; }
+  .petal { position: absolute; background-size: contain; background-repeat: no-repeat; opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

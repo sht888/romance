@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>给简妮宝宝的浪漫</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 48px 16px 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: #7a2a52;
+      background:
+        radial-gradient(ellipse 70% 60% at 50% 40%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.25) 45%, rgba(255, 255, 255, 0) 72%),
+        radial-gradient(circle at 18% 18%, rgba(255, 182, 213, 0.9) 0%, rgba(255, 182, 213, 0) 45%),
+        radial-gradient(circle at 85% 20%, rgba(214, 180, 255, 0.85) 0%, rgba(214, 180, 255, 0) 50%),
+        radial-gradient(circle at 80% 85%, rgba(255, 154, 190, 0.85) 0%, rgba(255, 154, 190, 0) 50%),
+        radial-gradient(circle at 15% 85%, rgba(186, 214, 255, 0.8) 0%, rgba(186, 214, 255, 0) 50%),
+        linear-gradient(135deg, #ffe4ee 0%, #ffc7e0 30%, #f4bdee 60%, #cdbbf8 100%);
+      background-attachment: fixed;
+    }
+
+    header { text-align: center; margin-bottom: 36px; }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      letter-spacing: 0.08em;
+      color: #ff2d86;
+      text-shadow: 0 0 3px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 105, 180, 0.45);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: #a3557c;
+      letter-spacing: 0.12em;
+    }
+
+    .grid {
+      width: 100%;
+      max-width: 960px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    a.card {
+      display: block;
+      padding: 22px 22px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255, 255, 255, 0.46);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      box-shadow: 0 10px 30px rgba(219, 112, 147, 0.16);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.62);
+      box-shadow: 0 16px 36px rgba(219, 112, 147, 0.28);
+    }
+
+    .emoji { font-size: 1.9rem; line-height: 1; }
+
+    .card h2 {
+      margin: 12px 0 6px;
+      font-size: 1.18rem;
+      color: #d62c77;
+      letter-spacing: 0.06em;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #94526f;
+    }
+
+    footer {
+      margin-top: 42px;
+      font-size: 0.85rem;
+      color: #a3557c;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>给简妮宝宝的浪漫</h1>
+    <p>愿所有美好，都与你有关 ♡</p>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="HappyBirthday/index.html">
+      <div class="emoji">🎂</div>
+      <h2>生日祝福</h2>
+      <p>一段只属于你的生日惊喜，还有人悄悄准备的小礼物。</p>
+    </a>
+
+    <a class="card" href="love1.html">
+      <div class="emoji">💐</div>
+      <h2>心形文字与鲜花</h2>
+      <p>文字飘入拼成心形，正中央写着你的名字，点击还能绽放鲜花。</p>
+    </a>
+
+    <a class="card" href="love2.html">
+      <div class="emoji">💌</div>
+      <h2>温馨提示便签墙</h2>
+      <p>一张张会飘落的小便签，都是想对你说的话。</p>
+    </a>
+
+    <a class="card" href="love3.html">
+      <div class="emoji">✨</div>
+      <h2>满屏飘字</h2>
+      <p>满屏都是同一句话，落在每一个角落。</p>
+    </a>
+
+    <a class="card" href="love4.html">
+      <div class="emoji">❤️</div>
+      <h2>代码雨爱心</h2>
+      <p>代码雨里跳动的爱心，藏着想对你说的心事。</p>
+    </a>
+
+    <a class="card" href="%E9%9B%AA%E8%8A%B1%E7%88%B1%E5%BF%83%E7%A0%B4%E7%A2%8E.html">
+      <div class="emoji">❄️</div>
+      <h2>雪花爱心破碎</h2>
+      <p>雪花落满心间，轻轻一点，爱心化作漫天星光。</p>
+    </a>
+  </main>
+
+  <footer>Made with ❤️ for 简妮宝宝</footer>
+</body>
+</html>
